@@ -1,0 +1,17 @@
+<app-menu-title></app-menu-title>
+<div class="container-articles">
+  <div class="articles-main">
+    <app-big-card id="1"
+      photoCover={{photoPrincipal}}
+      cardTitle={{titlePrincipal}}
+      cardDescription={{descriptionPrincipal}}>
+    </app-big-card>
+  </div>
+  <div class="articles-others">
+    <app-small-card *ngFor="let item of list"
+      id={{item.id}}
+      photoCover={{item.photo}}
+      cardTitle={{item.title}}>
+    </app-small-card>
+  </div>
+</div>
